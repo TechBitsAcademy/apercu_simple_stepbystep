@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEP BY STEP - Échange de devises vers la Chine, Nigeria, Dubaï et Afrique</title>
+    <meta name="description" content="Service professionnel d'échange de devises et transfert d'argent vers la Chine, Nigeria, Dubaï, Bénin, Cameroun, Côte d'Ivoire et autres pays africains">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --primary-red: #d62d20;
+            --primary-black: #212529;
+            --secondary-blue: #007bff;
+            --light-gray: #f8f9fa;
+            --primary-green: #28a745;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--primary-black);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        /* Header Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 5px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link {
+            color: var(--primary-black);
+            font-weight: 500;
+            margin: 0 12px;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-blue);
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-red);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            color: white;
+            padding: 8px 22px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #004494;
+            border-color: #004494;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+        }
+        
+        .btn-danger-custom {
+            background-color: var(--primary-red);
+            border-color: var(--primary-red);
+            color: white;
+            padding: 8px 22px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-danger-custom:hover {
+            background-color: #b8251b;
+            border-color: #b8251b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(214, 45, 32, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #003366 100%);
+            color: white;
+            padding: 120px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s forwards;
+            opacity: 0;
+            font-weight: 300;
+        }
+        
+        .hero-buttons {
+            animation: fadeInUp 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 100px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin-bottom: 60px;
+            position: relative;
+            display: inline-block;
+            font-size: 2.2rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background: var(--primary-red);
+            bottom: -15px;
+            left: 25%;
+            border-radius: 2px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 35px 30px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            border-bottom: 4px solid transparent;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+            border-bottom-color: var(--primary-red);
+        }
+        
+        .service-icon {
+            font-size: 2.8rem;
+            color: var(--primary-blue);
+            margin-bottom: 25px;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            background: rgba(0, 86, 179, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            background: var(--primary-blue);
+            color: white;
+            transform: rotateY(180deg);
+        }
+        
+        .service-card h3 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        /* Rates Section */
+        .rates-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .rate-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .rate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .rate-header {
+            background: var(--primary-blue);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .rate-header.bg-danger {
+            background: var(--primary-red) !important;
+        }
+        
+        .rate-header.bg-success {
+            background: var(--primary-green) !important;
+        }
+        
+        .rate-body {
+            padding: 30px;
+        }
+        
+        .rate-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        .rate-card ul {
+            margin-bottom: 30px;
+        }
+        
+        .rate-card li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .rate-card li i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+        
+        /* Testimonials */
+        .testimonials-section {
+            padding: 100px 0;
+            background: var(--light-gray);
+            position: relative;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 40px 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            margin: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: rgba(0, 86, 179, 0.1);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            position: relative;
+            z-index: 2;
+            font-style: italic;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+        }
+        
+        .rating {
+            color: #ffc107;
+        }
+        
+        /* Countries Section */
+        .countries-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .country-card {
+            text-align: center;
+            padding: 25px 15px;
+            transition: all 0.4s ease;
+            border-radius: 10px;
+        }
+        
+        .country-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        .country-flag {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 3px solid white;
+            transition: all 0.3s ease;
+        }
+        
+        .country-card:hover .country-flag {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .country-card h5 {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+        
+        /* Coming Soon */
+        .coming-soon-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-red) 0%, #a8231a 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coming-soon-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+        
+        .coming-soon-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .coming-soon-item {
+            margin: 15px;
+            padding: 25px 15px;
+            background: white;
+            border-radius: 10px;
+            color: var(--primary-black);
+            width: 170px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .coming-soon-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .coming-soon-item i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+        
+        .coming-soon-item h6 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--primary-black);
+            color: white;
+            padding: 80px 0 30px;
+            position: relative;
+        }
+        
+        .footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-red) 100%);
+        }
+        
+        .footer-logo img {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .footer p {
+            color: #adb5bd;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links h5 {
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links h5:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--primary-red);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background: var(--primary-red);
+            transform: translateY(-5px);
+        }
+        
+        .contact-info li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            margin-right: 12px;
+            margin-top: 4px;
+            color: var(--primary-red);
+            flex-shrink: 0;
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 25px;
+            margin-top: 50px;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 1199px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 100px 0 80px;
+                text-align: center;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title:after {
+                width: 70%;
+                left: 15%;
+            }
+            
+            .navbar-brand img {
+                height: 40px;
+            }
+            
+            .footer-logo {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .footer-links h5:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .footer-links {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .footer-links ul {
+                display: inline-block;
+                text-align: left;
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-buttons .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                bottom: 25px;
+                right: 25px;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/VOTRENUMERO" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="STEP BY STEP Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rates">Tarifs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Témoignages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#countries">Pays couverts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#coming-soon">Bientôt disponible</a>
+                        </li>
+                    </ul>
+                    <div class="ms-lg-3 mt-3 mt-lg-0">
+                        <a href="page2.html" class="btn btn-primary-custom me-2">Connexion</a>
+                        <a href="page2.html" class="btn btn-danger-custom">Commencer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">Échangez vos devises en toute confiance</h1>
+                    <p class="hero-subtitle">Transferts rapides et sécurisés vers la Chine, le Nigeria, Dubaï et toute l'Afrique directement depuis votre pays</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-danger-custom btn-lg me-3 pulse">Commencer maintenant</a>
+                        <a href="#rates" class="btn btn-outline-light btn-lg">Voir nos tarifs</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Transfert d'argent" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Nos Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Échange de devises</h3>
+                        <p>Changez vos devises africaines en Yuan Chinois, Naira Nigérian, Dirham de Dubaï ou autres devises au meilleur taux du marché.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Transfert rapide</h3>
+                        <p>Envoyez de l'argent à vos proches ou partenaires en moins de 24 heures avec des frais compétitifs et un suivi en temps réel.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sécurité garantie</h3>
+                        <p>Transactions 100% sécurisées avec cryptage bancaire et un support client multilingue disponible 24/7 pour vous accompagner.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rates Section -->
+    <section id="rates" class="rates-section">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Nos Tarifs Compétitifs</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="rate-card">
+                        <div class="rate-header">
+                            <h4>Vers la Chine</h4>
+                        </div>
+                        <div class="rate-body">
+                            <div class="rate-value">1 CNY = 85 XAF</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Frais de transfert: 1.5%</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Délai: 12-24h</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Minimum: 1000 CNY</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Maximum: 50,000 CNY</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary-custom w-100 mt-3">Échanger maintenant</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="rate-card">
+                        <div class="rate-header bg-danger">
+                            <h4>Vers le Nigeria</h4>
+                        </div>
+                        <div class="rate-body">
+                            <div class="rate-value">1 NGN = 1.2 XAF</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Frais de transfert: 2%</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Délai: Instantané</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Minimum: 5000 NGN</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Maximum: 500,000 NGN</li>
+                            </ul>
+                            <a href="#" class="btn btn-danger-custom w-100 mt-3">Échanger maintenant</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="rate-card">
+                        <div class="rate-header bg-success">
+                            <h4>Vers Dubaï</h4>
+                        </div>
+                        <div class="rate-body">
+                            <div class="rate-value">1 AED = 330 XAF</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Frais de transfert: 1%</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Délai: 6-12h</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Minimum: 500 AED</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Maximum: 20,000 AED</li>
+                            </ul>
+                            <a href="#" class="btn btn-success w-100 mt-3">Échanger maintenant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <p class="text-muted">*Les taux sont mis à jour quotidiennement. Contactez-nous pour des montants importants ou des devises spécifiques.</p>
+                <a href="#" class="btn btn-outline-primary btn-lg">Voir tous les taux</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Ce que disent nos clients</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">J'ai utilisé STEP BY STEP pour envoyer de l'argent à mon fournisseur en Chine. Transaction rapide et frais très compétitifs. Le service client a été réactif quand j'ai eu une question. Je recommande vivement!</p>
+                        <div class="testimonial-author">- Jean K., Commerçant</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Service client exceptionnel! J'avais un problème urgent avec mon transfert vers Dubaï et ils ont tout résolu en moins d'une heure. Les taux sont vraiment intéressants comparés aux banques locales.</p>
+                        <div class="testimonial-author">- Aminata D., Entrepreneure</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Le meilleur taux pour envoyer de l'argent au Nigeria depuis le Bénin. J'ai comparé avec plusieurs services et STEP BY STEP est imbattable sur les frais et la rapidité. J'utilise leur service chaque mois maintenant.</p>
+                        <div class="testimonial-author">- Oluwaseun B., Étudiant</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section id="countries" class="countries-section">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Pays Couverts</h2>
+            <p class="text-center mb-5" data-aos="fade-up">Nous offrons des services d'échange et de transfert vers et depuis ces pays</p>
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="country-card">
+                        <img src="https://flagcdn.com/w80/ng.png" alt="Nigeria" class="country-flag">
+                        <h5>Nigeria</h5>
+                        <p>Transferts instantanés vers tous les comptes</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="country-card">
+                        <img src="https://flagcdn.com/w80/ae.png" alt="Dubaï" class="country-flag">
+                        <h5>Dubaï (EAU)</h5>
+                        <p>Transferts rapides vers les Émirats</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="country-card">
+                        <img src="https://flagcdn.com/w80/cm.png" alt="Cameroun" class="country-flag">
+                        <h5>Cameroun</h5>
+                        <p>Transferts vers toutes les banques locales</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="country-card">
+                        <img src="https://flagcdn.com/w80/ci.png" alt="Côte d'Ivoire" class="country-flag">
+                        <h5>Côte d'Ivoire</h5>
+                        <p>Transferts rapides et sécurisés</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="country-card">
+                        <img src="https://flagcdn.com/w80/bj.png" alt="Bénin" class="country-flag">
+                        <h5>Bénin</h5>
+                        <p>Transferts vers tous les comptes bancaires</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="country-card">
+                        <img src="https://flagcdn.com/w80/sn.png" alt="Sénégal" class="country-flag">
+                        <h5>Sénégal</h5>
+                        <p>Transferts vers tous les opérateurs mobiles</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="country-card">
+                        <img src="https://flagcdn.com/w80/gh.png" alt="Ghana" class="country-flag">
+                        <h5>Ghana</h5>
+                        <p>Transferts vers comptes bancaires et mobiles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="#" class="btn btn-primary-custom btn-lg">Voir tous les pays</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section id="coming-soon" class="coming-soon-section">
+        <div class="container">
+            <h2 class="text-center section-title text-white" data-aos="fade-up">Bientôt Disponible</h2>
+            <p class="text-center mb-5 text-white-50" data-aos="fade-up">Nous travaillons activement à étendre nos services</p>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="coming-soon-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h6>Application Mobile</h6>
+                    <small>Disponible prochainement</small>
+                </div>
+                <div class="coming-soon-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-credit-card"></i>
+                    <h6>Carte Prépayée</h6>
+                    <small>En développement</small>
+                </div>
+                <div class="coming-soon-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-globe-africa"></i>
+                    <h6>Plus de Pays</h6>
+                    <small>Afrique du Sud, Kenya, etc.</small>
+                </div>
+                <div class="coming-soon-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h6>Épargne</h6>
+                    <small>Comptes rémunérés</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="footer-logo">
+                        <img src="logo-white.png" alt="STEP BY STEP Logo">
+                    </div>
+                    <p class="mb-4">STEP BY STEP offre des services d'échange de devises et de transfert d'argent rapides, sécurisés et à des taux compétitifs vers l'Afrique, la Chine et le Moyen-Orient.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Liens Rapides</h5>
+                        <ul>
+                            <li><a href="#services">Nos Services</a></li>
+                            <li><a href="#rates">Tarifs</a></li>
+                            <li><a href="#testimonials">Témoignages</a></li>
+                            <li><a href="#countries">Pays Couverts</a></li>
+                            <li><a href="#coming-soon">Bientôt Disponible</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Ressources</h5>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Guide des Transferts</a></li>
+                            <li><a href="#">Calculatrice</a></li>
+                            <li><a href="#">Contactez-nous</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-links">
+                        <h5>Contact</h5>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Avenue des Affaires, Quartier des Banques, Ville, Pays</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+123 456 7890</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>contact@stepbystep-transfer.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Lun-Ven: 8h-18h | Sam: 9h-13h</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright text-center">
+                        <p>&copy; 2023 STEP BY STEP. Tous droits réservés. | <a href="#" class="text-white-50">Conditions d'utilisation</a> | <a href="#" class="text-white-50">Politique de confidentialité</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.querySelector('.navbar-brand img').style.height = '40px';
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.querySelector('.navbar-brand img').style.height = '50px';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
